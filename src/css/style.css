@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+
+#register
+{
+    position: absolute;
+    top: 10px;
+    right: 160px;
+}
+
+#login
+{
+    position: absolute;
+    top: 10px;
+    right: 90px;
+}
+#account
+{
+    position: absolute;
+    top: 10px;
+    right: 160px;
+}
+#logout
+{
+    position: absolute;
+    top: 10px;
+    right: 90px;
+}
+a.dropdown-item:active{
+    background-color: #343a40;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+	background-color: #343a40;
+}
