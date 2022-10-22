@@ -5,6 +5,8 @@ from wtforms import PasswordField, TextAreaField, StringField, SubmitField, Bool
 from flask_login import current_user, LoginManager, login_user, logout_user, login_required
 from flask_admin import Admin, AdminIndexView
 from flask_admin.contrib.sqla import ModelView
+from data import db_session
+from data.user import User
 
 app = Flask(__name__)
 db_session.global_init("db/database.sqlite")

@@ -5,7 +5,8 @@ from sqlalchemy_serializer import SerializerMixin
 
 
 class Driver(SqlAlchemyBase, SerializerMixin):
-    id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    __tablename__ = 'driver'
+    id = db.Column(db.Integer, db.ForeignKey('user.id'), primary_key=True)
     location = db.Column(db.Integer, db.ForeignKey('road.source_point_id'))
     status = db.Column(db.Integer, nullable=True)
     bus = db.Column(db.Integer, nullable=True)

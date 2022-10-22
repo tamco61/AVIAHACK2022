@@ -9,17 +9,6 @@ import math
 BUS_SPEED = 500 # met/min
 
 
-class Event:
-    def __init__(self, type, time, number, gate, count):
-        self.type = type
-        self.time = time
-        self.number = number
-        self.gate = gate
-        self.count = count
-
-    def get_type(self):
-        return self.type
-
 
 def check_free_bus():
     session = db_session.create_session()
@@ -81,6 +70,7 @@ def sort_for_low_distance(d50, d100, point_id):
 
 def choice_bus(d50, d100, n50, n100):
     return d50[:n50], d100[:n100]
+
 
 
 
